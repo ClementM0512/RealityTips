@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewController">
+   <children>
+      <Pane prefHeight="336.0" prefWidth="550.0">
+         <children>
+            <Text layoutX="43.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bill" />
+            <TextField fx:id="txtFldBill" layoutX="88.0" layoutY="72.0" prefHeight="25.0" prefWidth="73.0" />
+            <Text layoutX="197.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tip %" />
+            <TextField fx:id="txtFldTip" layoutX="242.0" layoutY="72.0" prefHeight="25.0" prefWidth="73.0" />
+            <Text layoutX="352.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nb people" />
+            <TextField fx:id="txtFldNbPeople" layoutX="421.0" layoutY="72.0" prefHeight="25.0" prefWidth="87.0" />
+            <Text layoutX="220.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moneyator">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnCalc" layoutX="42.0" layoutY="158.0" mnemonicParsing="false" onAction="#Clac" prefHeight="66.0" prefWidth="470.0" text="Calculate" textFill="#118611">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Button>
+            <Text layoutX="45.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tip (per personne)" />
+            <Text layoutX="307.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total (per personne)" />
+            <TextField fx:id="txtFldTipPerso" editable="false" layoutX="161.0" layoutY="262.0" prefHeight="25.0" prefWidth="73.0" />
+            <TextField fx:id="txtFldTotalPerso" editable="false" layoutX="430.0" layoutY="262.0" prefHeight="25.0" prefWidth="73.0" />
+            <Text fx:id="TxtError" layoutX="46.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="462.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="186.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date tip" />
+            <TextField fx:id="DatTip" layoutX="241.0" layoutY="117.0" prefHeight="25.0" prefWidth="97.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
