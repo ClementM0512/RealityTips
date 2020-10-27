@@ -23,7 +23,7 @@ public class Writer {
   
   public String formaterTxt() {
     String res = null;
-    res = this.bill+';'+this.tip+';'+this.nbPeople+';'+this.datTip;
+    res = this.datTip+';'+this.bill+';'+this.tip+';'+this.nbPeople;
     
     return res;
   }
@@ -31,8 +31,9 @@ public class Writer {
   public void fileWriter(String fileName, String txt) {
     try {
       FileWriter writer = new FileWriter(fileName);
+//      writer.write("\n");
       writer.write(txt);
-      writer.write("\n");
+     
       writer.close();
     } catch (FileNotFoundException e) {
       e.printStackTrace();
